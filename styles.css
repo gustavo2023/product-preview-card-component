@@ -126,6 +126,8 @@ body {
 
 .img-container img {
   object-fit: cover;
+  width: 100%;
+  height: auto;
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
 }
@@ -220,7 +222,7 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 64rem) {
+@media (min-width: 90rem) {
   .product-card {
     display: flex;
     flex-direction: row;
