@@ -27,15 +27,16 @@
     <main>
       <div class="product-card">
         <div class="img-container">
-          <img
-            src="./images/image-product-mobile.jpg"
-            srcset="
-              ./images/image-product-mobile.jpg  686w,
-              ./images/image-product-desktop.jpg 600w
-            "
-            sizes="(min-width: 18.75rem) 686px, 600px"
-            alt="Gabrielle Essence Parfum bottle"
-          />
+          <picture>
+            <source
+              srcset="images/image-product-desktop.jpg"
+              media="(min-width: 64rem)"
+            />
+            <img
+              src="images/image-product-mobile.jpg"
+              alt="Gabrielle Chanel Perfume Bottle"
+            />
+          </picture>
         </div>
         <div class="product-details-container">
           <p class="product-category">PERFUME</p>
