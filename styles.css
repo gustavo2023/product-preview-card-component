@@ -1,0 +1,226 @@
+/* CSS Reset */
+
+/* Box sizing rules */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Prevent font size inflation */
+html {
+  -moz-text-size-adjust: none;
+  -webkit-text-size-adjust: none;
+  text-size-adjust: none;
+}
+
+/* Remove default margin in favour of better control in authored CSS */
+body,
+h1,
+h2,
+h3,
+h4,
+p,
+figure,
+blockquote,
+dl,
+dd {
+  margin-block-end: 0;
+}
+
+/* Remove list styles on ul, ol elements with a list role, which suggests default styling will be removed */
+ul[role="list"],
+ol[role="list"] {
+  list-style: none;
+}
+
+/* Set core body defaults */
+body {
+  min-height: 100vh;
+  line-height: 1.5;
+}
+
+/* Set shorter line heights on headings and interactive elements */
+h1,
+h2,
+h3,
+h4,
+button,
+input,
+label {
+  line-height: 1.1;
+}
+
+/* Balance text wrapping on headings */
+h1,
+h2,
+h3,
+h4 {
+  text-wrap: balance;
+}
+
+/* A elements that don't have a class get default styles */
+a:not([class]) {
+  text-decoration-skip-ink: auto;
+  color: currentColor;
+}
+
+/* Make images easier to work with */
+img,
+picture {
+  max-width: 100%;
+  display: block;
+}
+
+/* Inherit fonts for inputs and buttons */
+input,
+button,
+textarea,
+select {
+  font-family: inherit;
+  font-size: inherit;
+}
+
+/* Make sure textareas without a rows attribute are not tiny */
+textarea:not([rows]) {
+  min-height: 10em;
+}
+
+/* Anything that has been anchored to should have extra scroll margin */
+:target {
+  scroll-margin-block: 5ex;
+}
+
+/* End CSS Reset */
+
+/* Custom Styles */
+
+:root {
+  --dark-cyan: #3c8067;
+  --cream: #f2eae2;
+  --dark-blue: #1c232b;
+  --gray-blue: #6c7289;
+  --paragraph-size: 0.875rem;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  background-color: var(--cream);
+}
+
+.product-card {
+  background-color: white;
+  width: 21.4rem;
+  max-width: 37.5rem;
+  border-radius: 0.625rem;
+  margin-bottom: 1.5rem;
+}
+
+@media (min-width: 90rem) {
+  .product-card {
+    display: flex;
+    flex-direction: row;
+    gap: 1.5rem;
+  }
+}
+
+.img-container img {
+  object-fit: cover;
+  border-top-left-radius: 0.625rem;
+  border-top-right-radius: 0.625rem;
+}
+
+.product-details-container {
+  padding: 1.5rem;
+}
+
+.product-category {
+  color: var(--gray-blue);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: 0.3125rem;
+  margin-bottom: 0.75rem;
+}
+
+.product-name {
+  color: var(--dark-blue);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+  margin-bottom: 1rem;
+}
+
+.product-description {
+  color: var(--gray-blue);
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--paragraph-size);
+  font-weight: 500;
+  line-height: 1.4375;
+  margin-bottom: 1.5rem;
+}
+
+.price-container {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 1.1875rem;
+  margin-bottom: 1.25rem;
+}
+
+.current-price {
+  color: var(--dark-cyan);
+  font-family: "Fraunces", serif;
+  font-size: 2rem;
+  font-weight: 700;
+  line-height: 2rem;
+}
+
+.original-price {
+  color: var(--gray-blue);
+  font-family: "Montserrat", sans-serif;
+  font-size: 0.8125rem;
+  font-weight: 500;
+  line-height: 1.4375rem; /* 176.923% */
+}
+
+.add-to-cart-btn {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.72594rem;
+  width: 100%;
+  padding: 0.94rem 5.75rem;
+  border-radius: 0.5rem;
+  border: none;
+  background-color: var(--dark-cyan);
+  color: white;
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--paragraph-size);
+  font-weight: 700;
+  line-height: normal;
+  cursor: pointer;
+}
+
+.add-to-cart-btn:hover {
+  background-color: #1a4032;
+}
+
+footer {
+  color: var(--gray-blue);
+  font-family: "Montserrat", sans-serif;
+  font-size: var(--paragraph-size);
+  font-weight: 500;
+  line-height: 1.4375;
+}
+
+.attribution {
+  text-align: center;
+}
