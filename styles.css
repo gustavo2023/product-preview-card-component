@@ -248,13 +248,10 @@ footer {
   }
 
   .price-container {
-    margin-bottom: 1.5rem;
+    margin-bottom: 1.8rem;
   }
 
   .add-to-cart-btn {
-    display: flex;
-    align-items: last baseline;
-    justify-content: last baseline;
     padding: 0.94rem 3.88rem;
   }
 }
