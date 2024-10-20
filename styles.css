@@ -220,7 +220,7 @@ footer {
   text-align: center;
 }
 
-@media (min-width: 90rem) {
+@media (min-width: 64rem) {
   .product-card {
     display: flex;
     flex-direction: row;
