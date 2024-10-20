@@ -120,6 +120,10 @@ body {
   margin-bottom: 1rem;
 }
 
+.img-container {
+  width: 100%;
+}
+
 .img-container img {
   object-fit: cover;
   border-top-left-radius: 0.625rem;
