@@ -220,6 +220,8 @@ footer {
   .product-card {
     display: flex;
     flex-direction: row;
+    justify-content: center;
+    align-items: center;
     width: 37.5rem;
   }
 
@@ -227,8 +229,32 @@ footer {
     width: 50%;
   }
 
+  .img-container img {
+    border-bottom-left-radius: 0.625rem;
+    border-top-right-radius: 0;
+  }
+
   .product-details-container {
     width: 50%;
     padding: 2rem;
+  }
+
+  .product-category {
+    margin-bottom: 1.25rem;
+  }
+
+  .product-name {
+    margin-bottom: 1.5rem;
+  }
+
+  .price-container {
+    margin-bottom: 1.5rem;
+  }
+
+  .add-to-cart-btn {
+    display: flex;
+    align-items: last baseline;
+    justify-content: last baseline;
+    padding: 0.94rem 3.88rem;
   }
 }
