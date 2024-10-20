@@ -117,15 +117,7 @@ body {
   background-color: white;
   width: 21.4rem;
   border-radius: 0.625rem;
-  margin-bottom: 1.5rem;
-}
-
-@media (min-width: 90rem) {
-  .product-card {
-    display: flex;
-    flex-direction: row;
-    width: 37.5rem;
-  }
+  margin-bottom: 1rem;
 }
 
 .img-container img {
@@ -222,4 +214,21 @@ footer {
 
 .attribution {
   text-align: center;
+}
+
+@media (min-width: 90rem) {
+  .product-card {
+    display: flex;
+    flex-direction: row;
+    width: 37.5rem;
+  }
+
+  .img-container {
+    width: 50%;
+  }
+
+  .product-details-container {
+    width: 50%;
+    padding: 2rem;
+  }
 }
