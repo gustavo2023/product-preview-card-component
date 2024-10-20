@@ -126,8 +126,6 @@ body {
 
 .img-container img {
   object-fit: cover;
-  width: 100%;
-  height: auto;
   border-top-left-radius: 0.625rem;
   border-top-right-radius: 0.625rem;
 }
