@@ -154,7 +154,7 @@ body {
   font-family: "Fraunces", serif;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 100%;
+  line-height: 1;
   margin-bottom: 1rem;
 }
 
@@ -163,7 +163,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: var(--paragraph-size);
   font-weight: 500;
-  line-height: 1.4375;
+  line-height: 1.64;
   margin-bottom: 1.5rem;
 }
 
@@ -180,7 +180,7 @@ body {
   font-family: "Fraunces", serif;
   font-size: 2rem;
   font-weight: 700;
-  line-height: 2rem;
+  line-height: 1;
 }
 
 .original-price {
@@ -188,7 +188,7 @@ body {
   font-family: "Montserrat", sans-serif;
   font-size: 0.8125rem;
   font-weight: 500;
-  line-height: 1.5;
+  line-height: 1.64;
 }
 
 /* Visually hidden class for screen readers */
@@ -229,7 +229,7 @@ footer {
   font-family: "Montserrat", sans-serif;
   font-size: var(--paragraph-size);
   font-weight: 500;
-  line-height: 1.4375;
+  line-height: 1.5;
 }
 
 .attribution {
